@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,16 +38,19 @@ public class PlayerController : MonoBehaviour
 
     [Header("Components")]
     [SerializeField] Rigidbody2D rb2d;
+    [SerializeField] Animator animator;
 
     void Start()
     {
         VectorGravity = new Vector2(0, -Physics2D.gravity.y);
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         Horizontal_Move = Input.GetAxis("Horizontal");
+        animator.SetFloat("Horizontal_Move", Mathf.Abs(Horizontal_Move));
 
         // Jumping System
         Player_Jump_Method();
