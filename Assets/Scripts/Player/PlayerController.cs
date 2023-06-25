@@ -40,12 +40,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody2D rb2d;
     [SerializeField] Animator animator;
 
+    [Header("Particles")]
+    public ParticleSystem FootStep_Effect_Particle;
+    public ParticleSystem Impact_Effect_Particle;
+    private ParticleSystem.EmissionModule FootStep_Effect_Emission;
+
+    bool WasOnGround;
+
     void Start()
     {
         VectorGravity = new Vector2(0, -Physics2D.gravity.y);
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
+        FootStep_Effect_Emission = FootStep_Effect_Particle.emission;
+    }    
 
     void Update()
     {
@@ -54,6 +62,7 @@ public class PlayerController : MonoBehaviour
 
         // Jumping System
         Player_Jump_Method();
+        JumpAnimationEvent();
     }
 
     void FixedUpdate()
@@ -76,6 +85,24 @@ public class PlayerController : MonoBehaviour
     private void Player_Move_Method()
     {
         rb2d.velocity = new Vector2(Horizontal_Move * moveSpeed * Time.deltaTime, rb2d.velocity.y);
+
+        // Show Footstep Particle
+        if (Horizontal_Move != 0 && Ground_Check()) {
+            FootStep_Effect_Emission.rateOverTime = 35f;
+        } else {
+            FootStep_Effect_Emission.rateOverTime = 0f;
+        }
+
+        // Show Impact Particle
+        if(!WasOnGround && Ground_Check())
+        {
+            Impact_Effect_Particle.gameObject.SetActive(true);
+            Impact_Effect_Particle.Stop();
+            Impact_Effect_Particle.transform.position = FootStep_Effect_Particle.transform.position;
+            Impact_Effect_Particle.Play();
+        }
+
+        WasOnGround = Ground_Check();
     }
 
     private void Player_Jump_Method()
@@ -133,5 +160,26 @@ public class PlayerController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    private void JumpAnimationEvent()
+    {
+        if (rb2d.velocity.y > 0.01)
+        {
+            animator.SetBool("IsJump", true);
+            animator.SetBool("IsFall", false);
+        }
+        
+        if (rb2d.velocity.y < 0.01)
+        {
+            animator.SetBool("IsJump", false);
+            animator.SetBool("IsFall", true);
+        }
+        
+        if (Ground_Check())
+        {
+            animator.SetBool("IsJump", false);
+            animator.SetBool("IsFall", false);
+        }
     }
 }
