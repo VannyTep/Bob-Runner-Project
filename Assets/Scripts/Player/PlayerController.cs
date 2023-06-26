@@ -100,6 +100,12 @@ public class PlayerController : MonoBehaviour
             Impact_Effect_Particle.Stop();
             Impact_Effect_Particle.transform.position = FootStep_Effect_Particle.transform.position;
             Impact_Effect_Particle.Play();
+
+            if (!WasOnGround)
+            {
+                //play jump sound
+                FindAnyObjectByType<AudioManager>().Play("Player HitGround Sound");
+            }
         }
 
         WasOnGround = Ground_Check();
@@ -112,6 +118,8 @@ public class PlayerController : MonoBehaviour
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
             isJumping = true;
             jumpCounter = 0;
+            //play ground hit sound 
+            FindAnyObjectByType<AudioManager>().Play("Player Jump Sound");
         }
 
         if (rb2d.velocity.y > 0 && isJumping)
