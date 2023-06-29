@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Jumping Properties")]
+    [Header("Movement Properties")]
     public float moveSpeed;
     public float jumpPower;
     public float jumpTime;
     [SerializeField] float jumpMultiplier;
     [SerializeField] float fallMultiplier;
+    public float hangTime;
+    private float hangCounter;
 
     bool isJumping;
     float jumpCounter;
@@ -61,6 +63,15 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal_Move", Mathf.Abs(Horizontal_Move));
 
         // Jumping System
+        if (Ground_Check())
+        {
+            hangCounter = hangTime;
+        } 
+        else
+        {
+            hangCounter -= Time.deltaTime;
+        }
+
         Player_Jump_Method();
         JumpAnimationEvent();
     }
@@ -113,7 +124,7 @@ public class PlayerController : MonoBehaviour
 
     private void Player_Jump_Method()
     {
-        if (Input.GetButtonDown("Jump") && Ground_Check())
+        if (Input.GetButtonDown("Jump") && hangCounter > 0)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
             isJumping = true;
@@ -172,13 +183,13 @@ public class PlayerController : MonoBehaviour
 
     private void JumpAnimationEvent()
     {
-        if (rb2d.velocity.y > 0.01)
+        if (rb2d.velocity.y > 0)
         {
             animator.SetBool("IsJump", true);
             animator.SetBool("IsFall", false);
         }
         
-        if (rb2d.velocity.y < 0.01)
+        if (rb2d.velocity.y <= 0)
         {
             animator.SetBool("IsJump", false);
             animator.SetBool("IsFall", true);
