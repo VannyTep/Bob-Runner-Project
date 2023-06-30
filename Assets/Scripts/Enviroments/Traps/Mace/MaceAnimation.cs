@@ -10,7 +10,7 @@ public class MaceAnimation : MonoBehaviour
     void Start() {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            _Object.DDo
+            // _Object.DDo
         }
     }
 }
