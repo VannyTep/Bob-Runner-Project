@@ -814,13 +814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Menu - Canvas
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 6753291218671933741, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-=======
->>>>>>> 1f0ec593ad27dc23656f35ff83b569709aeb90fb
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
 --- !u!224 &220813712163789444 stripped
