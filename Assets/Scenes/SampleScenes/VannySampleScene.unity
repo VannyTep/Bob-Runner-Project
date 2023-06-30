@@ -686,14 +686,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1749868223}
     m_Modifications:
-    - target: {fileID: 432429741922814781, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 432429741922814781, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 624188159501732175, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -778,45 +770,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2085070173971317150, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4309203533618088860, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4309203533618088860, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161185058520327393, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161185058520327393, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6753291218671933741, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
       propertyPath: m_Name
       value: Start Menu - Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6753291218671933741, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
