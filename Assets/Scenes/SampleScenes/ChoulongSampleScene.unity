@@ -733,6 +733,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 933060963
+      objectReference: {fileID: 0}
     - target: {fileID: 1171261730722367341, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -794,6 +802,14 @@ PrefabInstance:
     - target: {fileID: 1171261730722367336, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
       propertyPath: m_Name
       value: Coin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 933060963
       objectReference: {fileID: 0}
     - target: {fileID: 1171261730722367341, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
       propertyPath: m_RootOrder
@@ -923,7 +939,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 904084923
+  m_SortingLayerID: -1174187097
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -5137,6 +5153,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 933060963
+      objectReference: {fileID: 0}
     - target: {fileID: 1171261730722367341, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5295,6 +5319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff1832308f2dcc4aa701d7a54cc317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Object: {fileID: 0}
 --- !u!61 &1309840311
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5360,7 +5385,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1294736001
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b7a3cd073c2240a45b56a984d1078699, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5583,8 +5608,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 904084923
-  m_SortingLayer: 2
+  m_SortingLayerID: -845241685
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6947,6 +6972,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171261730722367340, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 933060963
+      objectReference: {fileID: 0}
     - target: {fileID: 1171261730722367341, guid: 695ab5094bd7f9b4ba68aff540b1f606, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7000,6 +7033,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1866284695}
     m_Modifications:
+    - target: {fileID: 3879578941415896056, guid: 6b19479f02b2f76489dbe93b084e39e9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879578941415896056, guid: 6b19479f02b2f76489dbe93b084e39e9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -716689453
+      objectReference: {fileID: 0}
     - target: {fileID: 3879578941415896057, guid: 6b19479f02b2f76489dbe93b084e39e9, type: 3}
       propertyPath: m_RootOrder
       value: 1

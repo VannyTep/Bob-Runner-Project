@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SettingInfo
+  - ThreeStrip
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3449725611
+    locked: 0
+  - name: Background
+    uniqueID: 3120780199
+    locked: 0
+  - name: Trap
+    uniqueID: 1463677745
+    locked: 0
+  - name: Player
+    uniqueID: 3578277843
+    locked: 0
+  - name: Coins
+    uniqueID: 933060963
     locked: 0
