@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScenes/ChoulongSampleScene.unity
     guid: 15301361d0463184f9e5e5d12c33f4ad
   - enabled: 1
+    path: Assets/Scenes/LevelSelectedScene.unity
+    guid: e0892fb0ac6ddfd4ab79f3cadc64df7e
+  - enabled: 1
     path: Assets/Scenes/Levels Secnes/Level 1.unity
     guid: 8ef4b81588e01fe43aaac13e484fe459
   m_configObjects: {}
