@@ -678,14 +678,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1749868223}
     m_Modifications:
-    - target: {fileID: 432429741922814781, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 432429741922814781, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 624188159501732175, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -770,38 +762,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2030740221724026064, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2085070173971317150, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4309203533618088860, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4309203533618088860, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161185058520327393, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5161185058520327393, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 3800106024755041478, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1513781317422549310}
     - target: {fileID: 6753291218671933741, guid: ebb7d879fff2a2b4b85362208c317fda, type: 3}
       propertyPath: m_Name
       value: Start Menu - Canvas
@@ -824,6 +788,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1507476111}
     m_Modifications:
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: _MuteBtnImage
+      value: 
+      objectReference: {fileID: -949086302, guid: 941a628642e9d1e45a82a59eec857702, type: 3}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: _UnMuteBtnImage
+      value: 
+      objectReference: {fileID: 1567715266, guid: 941a628642e9d1e45a82a59eec857702, type: 3}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: _enableBtnImage
+      value: 
+      objectReference: {fileID: 1567715266, guid: 941a628642e9d1e45a82a59eec857702, type: 3}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: _disableBtnImage
+      value: 
+      objectReference: {fileID: -949086302, guid: 941a628642e9d1e45a82a59eec857702, type: 3}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: sounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: sounds.Array.data[2].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6ef01089ff9292048b4ad05c954e7827, type: 3}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Theme Song
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: sounds.Array.data[2].loops
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513781316180423724, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1513781316180423725, guid: 8fc0602c41dabbf49acb7b1cf3f465b2, type: 3}
       propertyPath: m_RootOrder
       value: 0
