@@ -8150,6 +8150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 877370334}
     m_Modifications:
+    - target: {fileID: 5734801938698173519, guid: 41368eb0f0e3ee7428c277c6348fb46e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StartMenuScene
+      objectReference: {fileID: 0}
     - target: {fileID: 5734801939060328156, guid: 41368eb0f0e3ee7428c277c6348fb46e, type: 3}
       propertyPath: m_Pivot.x
       value: 0

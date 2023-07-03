@@ -31,17 +31,23 @@ public class StartMenuController : MonoBehaviour
     {
         isClick_Outer_SettingInfo = !isClick_Outer_SettingInfo;
         _settingInfoAnimator.SetBool("IsOuter", isClick_Outer_SettingInfo);
+
+        // Play Button Sounds
     }
 
     public void ThreeStrip()
     {
         isClick_Outer_ThreeStrip = !isClick_Outer_ThreeStrip;
         _threeStripAnimator.SetBool("IsOuter", isClick_Outer_ThreeStrip);
+
+        // Play Button Sounds
     }
 
     public void ExitGame()
     {
         Application.Quit();
         Debug.Log("Quitting the Game.");
+
+        // Play Button Sounds
     }
 }

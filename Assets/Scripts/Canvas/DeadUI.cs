@@ -5,23 +5,18 @@ using UnityEngine;
 public class DeadUI : MonoBehaviour
 {
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        // Play Button Sounds
+        /* Here is the example => */ FindObjectOfType<AudioManager>().Play("ButtonSound");
     }
 
     public void BackToMainMenu(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+
+        // Play Button Sounds
     }
 }
