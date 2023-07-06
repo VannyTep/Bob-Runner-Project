@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SettingInfo
   - ThreeStrip
+  - lv-btn
   layers:
   - Default
   - TransparentFX
